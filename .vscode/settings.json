@@ -1,0 +1,82 @@
+{
+  "window.zoomLevel": 0,
+  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 25,
+  "editor.letterSpacing": 0.5,
+  "workbench.editor.tabSizing": "shrink",
+  "html.format.enable": true,
+  "html.format.preserveNewLines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  // this isn't really underline but we hack it to be a thicker cursor
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 4,
+  "editor.wordWrap": "off",
+  "editor.fontWeight": "400",
+  "editor.cursorBlinking": "blink",
+  "editor.renderWhitespace": "all",
+  "editor.colorDecorators": false,
+  "editor.minimap.enabled": false,
+  "editor.minimap.showSlider": "always",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "newUntitledFile",
+  "extensions.ignoreRecommendations": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.next": true
+  },
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "workbench.editor.tabCloseButton": "right",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "markdown": "html"
+  },
+  // show snippets before any other auto completion
+  "editor.snippetSuggestions": "top",
+  // this lets you quickly open multiple items in a row and not have the previous ones closed on you
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  // These are all my auto-save configs
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
+  // ESLint
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": false,
+  "eslint.options": {
+    "env": {
+      "browser": true,
+      "jest/globals": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "no-debugger": "off"
+    }
+  },
+}

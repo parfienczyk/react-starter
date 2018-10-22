@@ -1,6 +1,5 @@
-import React from 'react';
+import React from "react";
 
-// @todo
 export const NotFound = () => (
   <div>
     <h1>Not Found</h1>
@@ -8,3 +7,5 @@ export const NotFound = () => (
     <p>@TODO</p>
   </div>
 );
+
+// export default NotFound;

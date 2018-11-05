@@ -9,7 +9,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "npx eslint .",
-    "pretty": "npx prettier --write '**/*.{js,jsx,json,css,scss}'",
+    "pretty": "npx prettier --single-quote --write '**/*.{js,jsx,json,css,scss}'",
     "serve": "npx serve --no-clipboard --single --listen 5000 dist",
     "tree": "tree -I 'node_modules'",
     "precommit": "pretty-quick --staged"

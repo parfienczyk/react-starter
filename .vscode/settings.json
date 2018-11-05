@@ -19,10 +19,7 @@
   "editor.colorDecorators": false,
   "editor.minimap.enabled": false,
   "editor.minimap.showSlider": "always",
-  "editor.rulers": [
-    80,
-    120
-  ],
+  "editor.rulers": [80, 120],
   "workbench.activityBar.visible": true,
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
@@ -78,5 +75,5 @@
     "rules": {
       "no-debugger": "off"
     }
-  },
+  }
 }

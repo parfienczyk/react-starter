@@ -1,6 +1,6 @@
 {
   "name": "react-kp-starter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "author": "Karol Parfienczyk <parfienczyk@gmail.com> (https://parfienczyk.pl)",
   "scripts": {
@@ -11,7 +11,8 @@
     "precommit": "pretty-quick --staged",
     "lint": "npx eslint .",
     "pretty": "npx prettier --write '**/*.{js,jsx,json,css,scss}'",
-    "serve": "npx serve --no-clipboard --single --listen 5000 dist"
+    "serve": "npx serve --no-clipboard --single --listen 5000 dist",
+    "tree": "tree -I 'node_modules'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -24,24 +25,29 @@
   ],
   "dependencies": {
     "axios": "^0.18.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.5"
+    "react-scripts": "2.1.1"
   },
   "devDependencies": {
-    "husky": "^1.1.2",
-    "lint-staged": "^7.3.0",
-    "node-sass": "^4.9.4",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.1.3",
+    "lint-staged": "^8.0.4",
+    "node-sass": "^4.10.0",
     "prettier": "^1.14.3"
   },
-  "lint-staged": {
+  "skip.lint-staged": {
     "src/**/*.{js,jsx,json,css,scss}": [
       "prettier --write",
+      "eslint --cache --cache-location node_modules/.cache/eslint",
       "git add"
     ]
   },
-  "husky": {
+  "skip.husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }

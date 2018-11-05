@@ -1,8 +1,10 @@
 import React from 'react';
 
-export const SecretPage = () => (
-  <React.Fragment>
+const SecretPage = () => (
+  <>
     <h1>Secret Page</h1>
     <p>Description here...</p>
-  </React.Fragment>
+  </>
 );
+
+export default SecretPage;

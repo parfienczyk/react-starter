@@ -1,9 +1,9 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-import "./styles.scss";
+import './styles.scss';
 
-export const Header = () => (
+const Header = () => (
   <header>
     <div className="Nav">
       <div>
@@ -29,3 +29,5 @@ export const Header = () => (
     </div>
   </header>
 );
+
+export default Header;

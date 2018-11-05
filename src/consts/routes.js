@@ -3,5 +3,5 @@ export const ROUTES = {
   LOGIN: '/login',
   LOGOUT: '/logout',
   DASHBOARD: '/dashboard',
-  SECRET: '/secret-page'
+  SECRET: '/secret-page',
 };

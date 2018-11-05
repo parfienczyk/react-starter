@@ -8,11 +8,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "precommit": "pretty-quick --staged",
     "lint": "npx eslint .",
     "pretty": "npx prettier --write '**/*.{js,jsx,json,css,scss}'",
     "serve": "npx serve --no-clipboard --single --listen 5000 dist",
-    "tree": "tree -I 'node_modules'"
+    "tree": "tree -I 'node_modules'",
+    "precommit": "pretty-quick --staged"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,14 +40,14 @@
     "node-sass": "^4.10.0",
     "prettier": "^1.14.3"
   },
-  "skip.lint-staged": {
+  "lint-staged": {
     "src/**/*.{js,jsx,json,css,scss}": [
       "prettier --write",
       "eslint --cache --cache-location node_modules/.cache/eslint",
       "git add"
     ]
   },
-  "skip.husky": {
+  "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }

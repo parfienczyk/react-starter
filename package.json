@@ -1,6 +1,6 @@
 {
   "name": "react-kp-starter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "author": "Karol Parfienczyk <parfienczyk@gmail.com> (https://parfienczyk.pl)",
   "scripts": {
@@ -42,7 +42,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css,scss}": [
-      "prettier --write",
+      "prettier --single-quote --write",
       "eslint --cache --cache-location node_modules/.cache/eslint",
       "git add"
     ]

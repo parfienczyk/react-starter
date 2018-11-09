@@ -12,7 +12,7 @@
     "pretty": "npx prettier --single-quote --write '**/*.{js,jsx,json,css,scss}'",
     "serve": "npx serve --no-clipboard --single --listen 5000 dist",
     "tree": "tree -I 'node_modules'",
-    "precommit": "pretty-quick --staged"
+    "__precommit": "pretty-quick --staged"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -24,7 +24,12 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@material-ui/core": "^3.4.0",
+    "@material-ui/icons": "^3.0.1",
     "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "qs": "^6.5.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1",
@@ -43,14 +48,14 @@
     "prettier": "^1.14.3",
     "react-test-renderer": "^16.6.0"
   },
-  "lint-staged": {
+  "__lint-staged": {
     "src/**/*.{js,jsx,json,css,scss}": [
       "prettier --single-quote --write",
       "eslint --cache --cache-location node_modules/.cache/eslint",
       "git add"
     ]
   },
-  "husky": {
+  "__husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }

@@ -8,6 +8,7 @@ import Start from 'components/Start/Start';
 import Dashboard from 'components/Dashboard/Dashboard';
 import SecretPage from 'components/SecretPage/SecretPage';
 import Header from 'components/core/Header/Header';
+import Tickets from 'components/Tickets/Tickets';
 
 import './styles.scss';
 
@@ -24,6 +25,7 @@ class App extends Component {
               <Route path="/dashboard" component={Dashboard} />
               <Route path="/login" component={Login} />
               <Route path="/secret-page" component={SecretPage} />
+              <Route path="/tickets" component={Tickets} />
               <Route component={NotFound} />
               <Redirect to="/" />
             </Switch>
